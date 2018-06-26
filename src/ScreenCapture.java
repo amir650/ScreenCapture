@@ -21,7 +21,6 @@ public class ScreenCapture {
         this.mainFrame.add(this.statusLabel);
         this.mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.mainFrame.pack();
-        this.mainFrame.setVisible(true);
     }
 
     private void show() {
@@ -42,6 +41,7 @@ public class ScreenCapture {
 
         });
         this.controlPanel.add(okButton);
+        this.mainFrame.setVisible(true);
     }
 
     public static void main(String[] args) {
